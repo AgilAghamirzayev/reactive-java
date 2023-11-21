@@ -3,6 +3,7 @@ package com.mastercode.utils;
 import com.github.javafaker.Faker;
 
 import java.util.function.Consumer;
+import lombok.SneakyThrows;
 
 public class Util {
     private static final Faker FAKER = Faker.instance();
@@ -21,5 +22,10 @@ public class Util {
 
     public static Faker faker() {
         return FAKER;
+    }
+
+    @SneakyThrows
+    public static void sleep(int seconds) {
+        Thread.sleep(seconds * 1000L);
     }
 }

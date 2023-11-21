@@ -1,0 +1,8 @@
+# Default ignored files
+/../../../:reactive-java/.idea/shelf/
+/../../../:reactive-java/.idea/workspace.xml
+# Editor-based HTTP Client requests
+/../../../:reactive-java/.idea/httpRequests/
+# Datasource local storage ignored files
+/../../../:reactive-java/.idea/dataSources/
+/../../../:reactive-java/.idea/dataSources.local.xml

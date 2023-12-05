@@ -10,7 +10,6 @@ public class Util {
     public static Consumer<Object> onNext() {
         return o -> {
             System.out.println("Received: " + o);
-            System.out.println("Thread:" + Thread.currentThread().getName());
         };
     }
 

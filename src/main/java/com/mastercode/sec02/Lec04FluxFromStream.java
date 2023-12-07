@@ -1,4 +1,4 @@
-package com.mastercode.sec2;
+package com.mastercode.sec02;
 
 import static com.mastercode.utils.Util.onCompleted;
 import static com.mastercode.utils.Util.onError;

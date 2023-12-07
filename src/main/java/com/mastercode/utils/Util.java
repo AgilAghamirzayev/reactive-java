@@ -1,8 +1,10 @@
 package com.mastercode.utils;
 
 import com.github.javafaker.Faker;
+import com.mastercode.helper.DefaultSubscriber;
 import java.util.function.Consumer;
 import lombok.SneakyThrows;
+import org.reactivestreams.Subscriber;
 
 public class Util {
     private static final Faker FAKER = Faker.instance();
@@ -25,6 +27,14 @@ public class Util {
             System.out.println("Completed");
             System.out.println("Thread:" + Thread.currentThread().getName());
         };
+    }
+
+    public static Subscriber<Object> subscriber() {
+        return new DefaultSubscriber();
+    }
+
+    public static Subscriber<Object> subscriber(String name) {
+        return new DefaultSubscriber(name);
     }
 
     public static Faker faker() {

@@ -5,16 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6a58d06-cb3a-40de-978b-79136f0ca137" name="Changes" comment="Add new lectures">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec2/Lec04FluxFromStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec2/Lec05FluxRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec2/Lec06FluxSubscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/helper/DefaultSubscriber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/helper/NameGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/helper/NameProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec02/Assignment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec02/AssignmentV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec02/Lec07FluxVsList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec02/Lec08FluxInterval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec02/Lec09FluxFromMono.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec03/Lec01FluxCreate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec03/Lec02FluxCreateRefactoring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec03/Lec03FluxTake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercode/sec2/Lec01FluxInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec02/Lec01FluxInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercode/sec2/Lec02MultipleSubscribers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec02/Lec02MultipleSubscribers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercode/sec2/Lec03FluxFromArrayOrList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec02/Lec03FluxFromArrayOrList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercode/sec2/Lec04FluxFromStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec02/Lec04FluxFromStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercode/sec2/Lec05FluxRange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec02/Lec05FluxRange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercode/sec2/Lec06FluxSubscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/sec02/Lec06FluxSubscription.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mastercode/utils/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mastercode/utils/Util.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,31 +52,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Lec01FluxCreate.executor": "Profiler#1",
+    "Application.Lec02FluxCreateRefactoring.executor": "Profiler#1",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mastercode.sec03" />
       <recent name="com.mastercode.sec2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Lec06FluxSubscription">
-    <configuration name="Lec04FluxFromStream" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mastercode.sec2.Lec04FluxFromStream" />
+  <component name="RunManager" selected="Application.Lec03FluxTake">
+    <configuration name="Assignment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mastercode.sec02.Assignment" />
       <module name="reactive-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mastercode.sec2.*" />
+          <option name="PATTERN" value="com.mastercode.sec02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lec05FluxRange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mastercode.sec2.Lec05FluxRange" />
+    <configuration name="AssignmentV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mastercode.sec02.AssignmentV2" />
       <module name="reactive-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mastercode.sec2.*" />
+          <option name="PATTERN" value="com.mastercode.sec02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lec05MonoFromSupplier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mastercode.sec01.Lec05MonoFromSupplier" />
+    <configuration name="Lec01FluxCreate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mastercode.sec03.Lec01FluxCreate" />
       <module name="reactive-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mastercode.sec01.*" />
+          <option name="PATTERN" value="com.mastercode.sec03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lec06FluxSubscription" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mastercode.sec2.Lec06FluxSubscription" />
+    <configuration name="Lec02FluxCreateRefactoring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mastercode.sec03.Lec02FluxCreateRefactoring" />
       <module name="reactive-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mastercode.sec2.*" />
+          <option name="PATTERN" value="com.mastercode.sec03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mastercode.Main" />
+    <configuration name="Lec03FluxTake" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mastercode.sec03.Lec03FluxTake" />
       <module name="reactive-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mastercode.*" />
+          <option name="PATTERN" value="com.mastercode.sec03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,21 +144,28 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Lec04FluxFromStream" />
-      <item itemvalue="Application.Lec05FluxRange" />
-      <item itemvalue="Application.Lec06FluxSubscription" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.Lec05MonoFromSupplier" />
+      <item itemvalue="Application.Lec01FluxCreate" />
+      <item itemvalue="Application.Lec02FluxCreateRefactoring" />
+      <item itemvalue="Application.Lec03FluxTake" />
+      <item itemvalue="Application.Assignment" />
+      <item itemvalue="Application.AssignmentV2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lec06FluxSubscription" />
-        <item itemvalue="Application.Lec05FluxRange" />
-        <item itemvalue="Application.Lec04FluxFromStream" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Lec05MonoFromSupplier" />
+        <item itemvalue="Application.Lec03FluxTake" />
+        <item itemvalue="Application.Lec02FluxCreateRefactoring" />
+        <item itemvalue="Application.Lec01FluxCreate" />
+        <item itemvalue="Application.AssignmentV2" />
+        <item itemvalue="Application.Assignment" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -144,6 +180,10 @@
       <workItem from="1701257431164" duration="85000" />
       <workItem from="1701348395414" duration="1700000" />
       <workItem from="1701780282030" duration="1899000" />
+      <workItem from="1701852672426" duration="115000" />
+      <workItem from="1701866752101" duration="4400000" />
+      <workItem from="1701935858221" duration="604000" />
+      <workItem from="1701936736357" duration="2248000" />
     </task>
     <task id="LOCAL-00001" summary="Add new lectures">
       <option name="closed" value="true" />

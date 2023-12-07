@@ -1,10 +1,6 @@
-package com.mastercode.sec2;
+package com.mastercode.sec02;
 
 import reactor.core.publisher.Flux;
-
-import static com.mastercode.utils.Util.onCompleted;
-import static com.mastercode.utils.Util.onError;
-import static com.mastercode.utils.Util.onNext;
 
 public class Lec02MultipleSubscribers {
     public static void main(String[] args) {

@@ -41,8 +41,12 @@ public class Util {
         return FAKER;
     }
 
-    @SneakyThrows
     public static void sleep(int seconds) {
-        Thread.sleep(seconds * 1000L);
+        sleepMillis(seconds * 1000);
+    }
+
+    @SneakyThrows
+    public static void sleepMillis(int milliseconds) {
+        Thread.sleep(milliseconds);
     }
 }

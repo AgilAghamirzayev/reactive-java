@@ -44,8 +44,12 @@ public class Solution2 {
             return "0";
         }
 
-        if (positiveCount == 0 && negativeCount == 1) {
+        if (xs.length == 1 && negativeCount == 1) {
             return product.toString();
+        }
+
+        if (positiveCount == 0 && negativeCount == 1) {
+            return "0";
         }
 
         if (negativeCount % 2 == 1) {

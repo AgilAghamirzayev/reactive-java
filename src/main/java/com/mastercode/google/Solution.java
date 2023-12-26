@@ -89,7 +89,7 @@ class Path {
                 && mat[row][col] == 0 && !visited[row][col];
     }
 
-     static class Node {
+    static class Node {
         // matrix cell coordinates: (x, y)
         // cell's minimum distance to the start: dist
         int x, y, dist;

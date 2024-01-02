@@ -11,10 +11,16 @@ public class Lec02RepeatWithCondition {
     public static final AtomicInteger atomic = new AtomicInteger(1);
 
     public static void main(String[] args) {
-
-
-
+        getIntegers()
+                .repeat(() -> atomic.get() < 14)
+                .subscribe(subscriber());
     }
 
+    private static Flux<Integer> getIntegers() {
+        return Flux.range(1, 3)
+                .doOnSubscribe(s -> System.out.println("Subscribed"))
+                .doOnComplete(() -> System.out.println("-Completed-"))
+                .map(i -> atomic.getAndIncrement());
+    }
 
 }

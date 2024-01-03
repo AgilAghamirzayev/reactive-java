@@ -1,19 +1,24 @@
 package com.mastercode.sec10;
 
 import reactor.core.publisher.Flux;
+import reactor.util.retry.Retry;
 
+import java.time.Duration;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import static com.mastercode.utils.Util.sleep;
 import static com.mastercode.utils.Util.subscriber;
 
-public class Lec03Retry {
+public class Lec04RetryWhen {
 
     public static final AtomicInteger atomic = new AtomicInteger(1);
 
     public static void main(String[] args) {
         getIntegers()
-                .retry(2)
+                .retryWhen(Retry.fixedDelay(2, Duration.ofSeconds(3)))
                 .subscribe(subscriber());
+
+        sleep(20);
     }
 
     private static Flux<Integer> getIntegers() {
